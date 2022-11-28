@@ -7,13 +7,10 @@
 /**
  * Check service worker.
  */
- if (navigator.serviceWorker) {
-  navigator.serviceWorker.register(
-    "/ICS2O-Unit5-02/sw.js",
-    {
-      scope: "/ICS2O-Unit5-02/",
-    }
-  )
+if (navigator.serviceWorker) {
+  navigator.serviceWorker.register("/ICS2O-Unit5-02/sw.js", {
+    scope: "/ICS2O-Unit5-02/",
+  })
 }
 
 /**
@@ -25,13 +22,13 @@ const randomNumber = Math.floor(Math.random() * 6) + 1
  * This function displays the slider value.
  */
 function myButtonClicked(buttonOnChecked) {
-  buttonOnChecked = document.getElementById('option-1').checked
+  buttonOnChecked = document.getElementById("option-1").checked
 
   if (buttonOnChecked == true) {
     document.getElementById("radio-button-value").innerHTML =
-    "<p>Your number is </p>" + "+" + randomNumber
+      "<p>Your number is </p>" + "+" + randomNumber
   } else {
     document.getElementById("radio-button-value").innerHTML =
-    "<p>Your number is </p>" + "+" + randomNumber
+      "<p>Your number is </p>" + "+" + randomNumber
   }
 }
