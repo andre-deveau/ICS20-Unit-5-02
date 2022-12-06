@@ -1,4 +1,4 @@
-# ICS2O-PWA-Template
+# ICS20-Unit-5-02
 
 [![Mr Coxall's Super Linter](https://github.com/andre-deveau/ICS2O-Unit-5-02/workflows/Mr%20Coxall's%20Super%20Linter/badge.svg)](https://github.com/andre-deveau/ICS2O-Unit-5-02/actions/)
 
