@@ -14,21 +14,25 @@ if (navigator.serviceWorker) {
 }
 
 /**
- * returns a random integer from 1 to 6 into variable "randomNumber"
+ * This function updates slider value.
  */
-const randomNumber = Math.floor(Math.random() * 6) + 1
+function updateSliderValue(valueFromSlider) {
+  document.getElementById("slider-value").innerHTML = valueFromSlider
+}
 
 /**
  * This function displays the slider value.
  */
 function myButtonClicked(buttonOnChecked) {
-  buttonOnChecked = document.getElementById("option-1").checked
+  let buttonPositiveChecked = document.getElementById("positive").checked
 
-  if (buttonOnChecked == true) {
-    document.getElementById("radio-button-value").innerHTML =
-      "<p>Your number is </p>" + "+" + randomNumber
+  if (buttonPositiveChecked == true) {
+    let randomNumber = Math.floor(Math.random() * 6) + 1
+    document.getElementById("radio-button-value").inenrHTML =
+      "Value is: " + randomNumber
   } else {
-    document.getElementById("radio-button-value").innerHTML =
-      "<p>Your number is </p>" + "+" + randomNumber
+    let randomNumber = Math.floor(Math.random() * -6) - 1
+    document.getElementById("radio-button-value").inenrHTML =
+      "Value is: " + randomNumber
   }
 }
