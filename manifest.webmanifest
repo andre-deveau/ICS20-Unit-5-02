@@ -1,9 +1,9 @@
 {
   "name": "Andre Deveau's App",
   "short_name": "Andre Deveau's App",
-  "description": "Github Page for Mr Coxall's App",
-  "scope": "/ICS2O-Unit-5-02/",
-  "start_url": "/ICS2O-Unit-5-02/",
+  "description": "Github Page for Andre Deveau's App",
+  "scope": "/ICS20-Unit-5-02/",
+  "start_url": "/ICS20-Unit-5-02/",
   "background_color": "#ffffff",
   "theme_color": "#ffffff",
   "display": "standalone", 
