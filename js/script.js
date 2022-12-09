@@ -1,38 +1,32 @@
-// Copyright (c) 2020 Andre Deveau All rights reserved
+// Copyright (c) 2022 Andre Deveau All rights reserved
 //
 // Created by: Andre Deveau
 // Created on: Nov 2022
 // This file contains the JS functions for index.html
 
 /**
- * Check service worker.
+ * Check servie worker.
  */
 if (navigator.serviceWorker) {
-  navigator.serviceWorker.register("/ICS20-Unit-5-02/sw.js", {
-    scope: "/ICS20-Unit-5-02/",
+  navigator.serviceWorker.register("/ICS2O-Unit-5-02/sw.js", {
+    scope: "/ICS2O-Unit-5-02/",
   })
 }
 
-/**
- * This function updates slider value.
- */
-function updateSliderValue(valueFromSlider) {
-  document.getElementById("slider-value").innerHTML = valueFromSlider
-}
+const randomNumberPos = Math.floor(Math.random() * 6) + 1
+const randomNumberNeg = Math.floor(Math.random() * -6) + 1
 
 /**
- * This function displays the slider value.
+ * This function displays positive and negative number
  */
-function myButtonClicked(buttonOnChecked) {
-  let buttonPositiveChecked = document.getElementById("positive").checked
+function myButtonClicked() {
+  buttonOnChecked = document.getElementById("flash1").checked
 
-  if (buttonPositiveChecked == true) {
-    let randomNumber = Math.floor(Math.random() * 6) + 1
+  if (buttonOnChecked == true) {
     document.getElementById("radio-button-value").innerHTML =
-      "Value is: " + randomNumber
+      "Your random number is: " + randomNumberPos + "."
   } else {
-    let randomNumber = Math.floor(Math.random() * -6) - 1
     document.getElementById("radio-button-value").innerHTML =
-      "Value is: " + randomNumber
+      "Your random number is: " + randomNumberNeg + "."
   }
 }
