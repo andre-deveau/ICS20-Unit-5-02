@@ -4,5 +4,5 @@
 
 If the root of the repo is your website then:
 
-This site can be found at: [https://andre-deveau.github.io/<REPOSITORY>](https://andre-deveau.github.io/ICS20-Unit-5-02)
+This site can be found at: [https://andre-deveau.github.io/ICS20-Unit-5-02](https://andre-deveau.github.io/ICS20-Unit-5-02)
 
